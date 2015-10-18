@@ -11,6 +11,7 @@ output:
 
 library(knitr)
 library(dplyr)
+setwd("~/R/R Projects/5.Reproducible Research/Peer Assessment 1")
 alldata <- read.csv("activity.csv",header = T)
 ```
 ### Process/transform the data (if necessary) into a format suitable for your analysis
