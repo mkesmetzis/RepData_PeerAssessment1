@@ -1,8 +1,6 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+output: html_document
 ---
 
 
@@ -83,8 +81,8 @@ mean(steps_by_day$total)
 median(steps_by_day$total)
 ```
 
-#####Mean values are same 
-#####We can see a slight decrease in median Value.
+Mean values are same 
+We can see a slight decrease in median Value.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
