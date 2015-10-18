@@ -7,11 +7,18 @@ output:
 
 
 ## Loading and preprocessing the data
+library(knitr)
+library(dplyr)
+setwd("~/R/R Projects/5.Reproducible Research/Peer Assessment 1")
+alldata <- read.csv("activity.csv",header = T)
 
-
+## Process/transform the data (if necessary) into a format suitable for your analysis
+data <- alldata[with (alldata, {
+    !(is.na(steps))
+}),]
 
 ## What is mean total number of steps taken per day?
-
+steps_by_day <- summarise(group_by(data, date), total = sum(steps))
 
 
 ## What is the average daily activity pattern?
